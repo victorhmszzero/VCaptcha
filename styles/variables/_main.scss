@@ -1,0 +1,148 @@
+/* ========================
+Block: Main
+========================= */
+
+.main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+
+  &__container {
+    margin: 0px auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 1140px;
+  }
+
+  &__subsection {
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 270px;
+  }
+
+  &__subsection--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__subsection--form {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &__logo {
+    width: 350px;
+    pointer-events: none;
+  }
+
+  &__text {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  &__text--bold {
+    font-weight: 500;
+  }
+}
+
+/* ========================
+Element: Annotation
+========================= */
+
+.main {
+  &__annotation {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45.891px 0px;
+    padding: 10px;
+    background-color: #fcffd8;
+    width: 300px;
+    height: 320px;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.1);
+    transform: rotateZ(deg);
+    transform-origin: center center;
+  }
+
+  &__annotation::after {
+    position: absolute;
+    top: -5px;
+    z-index: 3;
+    width: 100%;
+    content: ".";
+    color: transparent;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .annotation {
+    &__icon.material-icons {
+      color: rgb(0, 0, 0);
+      font-size: 42px;
+    }
+
+    &__text {
+      padding: 10px 20px;
+      color: rgb(15, 15, 15);
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 17px;
+      font-style: italic;
+    }
+
+    &__text::before {
+      content: "// ";
+      color: #e83e8c;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      font-size: 1.25rem;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 0px 10px;
+      outline: none;
+      border: none;
+      border: 2px solid black;
+      border-radius: 4px;
+      color: #fff;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    &__btn:hover {
+      background-color: #45a049;
+    }
+
+    &__btn--html {
+      background-color: #ff3333;
+    }
+
+    &__btn--css {
+      background-color: #3399ff;
+    }
+
+    &__btn--js {
+      background-color: #ff9933;
+    }
+  }
+}

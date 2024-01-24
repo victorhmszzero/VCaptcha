@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/vcacptcha.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" href="assets/VCaptcha/Icon-color.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/VCaptcha/Icon-color.svg" type="image/x-icon" />
+    <title>VCaptcha</title>
+  </head>
+  <body>
+    <!-- SCSS: main -->
+    <main class="main">
+      <div class="main__container">
+        <section class="main__subsection main__subsection--header">
+          <div class="main__header">
+            <img class="main__logo" alt="logo" src="assets/VCaptcha/Logo.svg" />
+            <p class="main__text">Preencha todas as informações e valide para conseguir enviar o formulário.</p>
+          </div>
+          <!-- SCSS: main -->
+          <div class="main__annotation">
+            <i class="annotation__icon material-icons">code</i>
+            <p class="annotation__text">Implemente o código no seu projeto.</p>
+            <div class="annotation__container">
+              <button class="annotation__btn annotation__btn--html" title="HTML" type="button">
+                <i class="annotation__icon material-icons">html</i>
+              </button>
+              <button class="annotation__btn annotation__btn--css" title="CSS" type="button">
+                <i class="annotation__icon material-icons">css</i>
+              </button>
+              <button class="annotation__btn annotation__btn--js" title="JavaScript" type="button">
+                <i class="annotation__icon material-icons">javascript</i>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="main__subsection main__subsection--form">
+          <!-- SCSS: contact-form -->
+          <form class="main__contact-form" id="contactform">
+            <div class="contact-form__container">
+              <label class="contact-form__label" for="nome">Nome:</label>
+              <input class="contact-form__input" id="nome" name="nome" type="text" required />
+            </div>
+
+            <div class="contact-form__container">
+              <label class="contact-form__label" for="email">E-mail:</label>
+              <input class="contact-form__input" id="email" name="email" type="email" required />
+            </div>
+
+            <div class="contact-form__container">
+              <!-- SCSS: v-captcha -->
+              <section class="v-captcha">
+                <!-- ! Button to show v-overlay -->
+                <label class="v-captcha__label" id="VcaptchaLabel" type="button">
+                  <span class="v-captcha__icon v-captcha__icon--square" id="VcaptchaIcon"><i class="material-icons">check</i></span>
+                  <span class="v-captcha__text">Não sou um robô</span>
+                </label>
+                <input class="v-captcha__input" id="VcaptchaNullFiled" placeholder="Null" type="text" required />
+                <!-- ! V-overlay content -->
+                <div class="v-captcha__v-overlay" id="VcaptchaOverlay">
+                  <section class="v-overlay__content">
+                    <span class="v-overlay__captcha" id="VcaptchaCaptcha"></span>
+                    <label class="v-overlay__label" for="VcaptchaInput">Escreva o texto acima:</label>
+
+                    <div class="v-overlay__sub-content">
+                      <input class="v-overlay__input" id="VcaptchaInput" type="text" maxlength="5" tabindex="-1" />
+                      <button class="v-overlay__btn v-overlay__btn--restart" id="VcaptchaRefresh" type="button" tabindex="-1">
+                        <i class="material-icons">restart_alt</i>
+                      </button>
+                    </div>
+                    <button class="v-overlay__btn v-overlay__btn--dark" id="VcaptchaSubmit" type="button" tabindex="-1">Validar</button>
+                  </section>
+                </div>
+              </section>
+            </div>
+            <!-- SCSS -->
+            <button class="btn btn--success" type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- SCSS: overlay -->
+    <section class="overlay" id="overlay">
+      <div class="overlay__content">
+        <section class="overlay__container">
+          <i class="overlay__icon material-icons">check</i>
+          <h1 class="overlay__title">Envio bem-sucedido!</h1>
+        </section>
+
+        <section class="overlay__container">
+          <p class="main__text">
+            Este é um projeto que demonstra a validação do
+            <span class="main__text main__text--bold">Vcapcha</span>.<br />
+            Nenhum e-mail foi enviado.
+            <span class="main__text main__text--bold">Obrigado por testar!</span>
+          </p>
+        </section>
+
+        <button class="btn btn--success" id="btnCloseOverlay">Voltar</button>
+      </div>
+    </section>
+
+    <!-- SCSS: footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <img class="footer__icon footer__icon--logo" src="assets/vhmslogo-white.svg" alt="Autor logo" />
+        <p class="footer__text">
+          Este projeto foi criado por VHMS <br />
+          &copy; 2024.
+        </p>
+      </div>
+
+      <div class="footer__container">
+        <a class="footer__btn" href="https://wa.me/5511977690193?text=Ol%C3%A1+Victor%21" target="_blank" title="WhatsApp Link">
+          <img class="footer__icon" src="assets/wp-icon.svg" alt="Ícone do WhatsApp" />
+        </a>
+        <a class="footer__btn" href="https://t.me/VictorVhms" target="_blank" title="Telegram Link">
+          <img class="footer__icon" src="assets/telegram-icon.svg" alt="Ícone do Telegram" />
+        </a>
+        <section class="footer__tooltip">
+          <div class="footer__tooltip-item" id="footerTooltip">
+            <div class="footer__tooltip-text">E-mail copiado!</div>
+          </div>
+          <button class="footer__btn footer__btn--email" id="checkEmail" data-clipboard-target="#mailtext" title="Copiar e-mail">
+            <img class="footer__icon" src="assets/email-icon.svg" alt="Ícone de E-mail" />
+          </button>
+        </section>
+        <a class="footer__btn" href="https://www.behance.net/victor_vhms" target="_blank" title="Behance Link">
+          <img class="footer__icon" src="assets/behance-icon.svg" alt="Ícone do Behance" />
+        </a>
+        <a class="footer__btn" href="https://www.linkedin.com/in/victor-hugo-magalhaes-silva/" target="_blank" title="Linkedin Link">
+          <img class="footer__icon" src="assets/linkedin-icon.svg" alt="Ícone do Linkedin" />
+        </a>
+        <a class="footer__btn" href="https://linktr.ee/victor_vhms" target="_blank" title="Linktree Link">
+          <img class="footer__icon" src="assets/linktree-icon.svg" alt="Ícone do Linktree" />
+        </a>
+      </div>
+
+      <div class="footer__container">
+        <p class="footer__text">Versão 1.0</p>
+        <a class="footer__btn" href="https://github.com/victorhmszzero/VCaptcha" target="_blank" title="VCaptcha Link">
+          <img class="footer__icon footer__icon--logo" src="assets/VCaptcha/icon-white.svg" alt="Logo" />
+        </a>
+        <p class="footer__text footer__text--hide" id="mailtext">victorhms.vhms@gmail.com</p>
+        <a class="footer__license" href="https://github.com/victorhmszzero/VCaptcha?tab=MIT-1-ov-file" target="_blank" title="VCaptcha License Link">
+          <p class="footer__text footer__text--license">MIT License</p>
+        </a>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/vcacptcha.js"></script>
+  </body>
+</html>
