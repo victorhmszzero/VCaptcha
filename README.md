@@ -16,7 +16,6 @@ Veja um exemplo de como o **Vcaptcha** funciona:
 ## 📑 Sumário 
 Para facilitar a navegação, abaixo está um sumário dos tópicos abordados neste `README`.
 
-- [Introdução](#implementação)
 - [Implementação](#implementação)
     - [HTML](#html)
     - [CSS](#css)
@@ -26,7 +25,7 @@ Para facilitar a navegação, abaixo está um sumário dos tópicos abordados ne
 - [Contribuição](#contribuição)
 - [Agradecimentos](#agradecimentos)
 
-## 🛠️ Implementação 
+<h2 id="#implementação">🛠️ Implementação </h2>
 
 ### 🟠 HTML 
 
