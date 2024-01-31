@@ -29,7 +29,7 @@ Este código de conduta se aplica tanto nos espaços do projeto quanto em espaç
 
 ## Aplicação
 
-Comportamento abusivo, assédio ou outros comportamentos inaceitáveis podem ser denunciados contactando a equipe do projeto em [insira seu endereço de e-mail].
+Comportamento abusivo, assédio ou outros comportamentos inaceitáveis podem ser denunciados contactando a equipe do projeto em victorhms.vhms@gmail.com.
 
 Todas as reclamações serão revisadas e investigadas e resultarão numa resposta que é considerada necessária e apropriada às circunstâncias. A equipe é obrigada a manter a confidencialidade em relação ao relator de um incidente.
 
