@@ -1,16 +1,26 @@
-# Vcaptcha
+
+<div align="center">
+    
+[![Logo](https://raw.githubusercontent.com/victorhmszzero/VCaptcha/main/assets/VCaptcha/Logo-white.svg)](#)
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 ![SCSS](https://img.shields.io/badge/SCSS-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
 
-*Bem-vindo ao Vcaptcha!* O **Vcaptcha** é um sistema de verificação de captcha simples, desenvolvido para facilitar a integração em seus formulários da web. Com uma implementação fácil em **HTML**, **CSS** e **JavaScript**.
+</div>
 
-o **Vcaptcha** ajuda a proteger seus formulários contra bots indesejados enquanto oferece uma experiência amigável para os usuários. 
+# Bem-vindo ao VCaptcha!
 
-Veja um exemplo de como o **Vcaptcha** funciona:
+O **VCaptcha** é um sistema de verificação de captcha simples, desenvolvido para facilitar a integração em seus formulários da web. Com uma implementação fácil em **HTML**, **CSS** e **JavaScript**.
 
-[![Visualizar Exemplo](https://img.shields.io/badge/Visualizar%20Exemplo-4CAF50.svg?style=for-the-badge)](https://example.com/vcaptcha-demo)
+o **VCaptcha** ajuda a proteger seus formulários contra bots indesejados enquanto oferece uma experiência amigável para os usuários. 
+
+Veja um exemplo de como o **VCaptcha** funciona:
+
+<a href="https://victorhmszzero.github.io/VCaptcha/">
+    <img src="https://github.com/victorhmszzero/banners-github/blob/685636ac316f3112ea12b3b6ab01049d2946cae1/assets/html-css-js.png" width="250px" alt="Visualizar Projeto">
+</a>
 
 ## 📑 Sumário 
 Para facilitar a navegação, abaixo está um sumário dos tópicos abordados neste `README`.
@@ -18,7 +28,7 @@ Para facilitar a navegação, abaixo está um sumário dos tópicos abordados ne
 - [Implementação](#️-implementação)
     - [HTML](#-html)
     - [CSS](#-css)
-    - [JavaScript](#-javascript)
+    - [JavaScript](#-js)
 - [Licença](#-licença)
 - [Código de Conduta](#-código-de-conduta)
 - [Contribuição](#-contribuição)
@@ -50,25 +60,25 @@ Para facilitar a navegação, abaixo está um sumário dos tópicos abordados ne
     ```html
     <section class="v-captcha">
       <!-- Botão para mostrar o v-overlay -->
-      <label class="v-captcha__label" id="VcaptchaLabel" type="button">
-        <span class="v-captcha__icon v-captcha__icon--square" id="VcaptchaIcon">
+      <label class="v-captcha__label" id="Label" type="button">
+        <span class="v-captcha__icon v-captcha__icon--square" id="Icon">
           <i class="material-icons">check</i>
         </span>
         <span class="v-captcha__text">Não sou um robô</span>
       </label>
-      <input class="v-captcha__input" id="VcaptchaNullFiled" placeholder="Null" type="text" required />
+      <input class="v-captcha__input" id="NullFiled" placeholder="Null" type="text" required />
       <!-- Conteúdo do v-overlay -->
-      <div class="v-captcha__v-overlay" id="VcaptchaOverlay">
+      <div class="v-captcha__v-overlay" id="Overlay">
         <section class="v-overlay__content">
-          <span class="v-overlay__captcha" id="VcaptchaCaptcha"></span>
-          <label class="v-overlay__label" for="VcaptchaInput">Escreva o texto acima:</label>
+          <span class="v-overlay__captcha" id="Captcha"></span>
+          <label class="v-overlay__label" for="Input">Escreva o texto acima:</label>
           <div class="v-overlay__sub-content">
-            <input class="v-overlay__input" id="VcaptchaInput" type="text" maxlength="5" tabindex="-1" />
-            <button class="v-overlay__btn v-overlay__btn--restart" id="VcaptchaRefresh" type="button" tabindex="-1">
+            <input class="v-overlay__input" id="Input" type="text" maxlength="5" tabindex="-1" />
+            <button class="v-overlay__btn v-overlay__btn--restart" id="Refresh" type="button" tabindex="-1">
               <i class="material-icons">restart_alt</i>
             </button>
           </div>
-          <button class="v-overlay__btn v-overlay__btn--dark" id="VcaptchaSubmit" type="button" tabindex="-1">Validar</button>
+          <button class="v-overlay__btn v-overlay__btn--dark" id="Submit" type="button" tabindex="-1">Validar</button>
         </section>
       </div>
     </section>
@@ -103,7 +113,7 @@ Para facilitar a navegação, abaixo está um sumário dos tópicos abordados ne
 
 ### 🔵 CSS
 
-Para personalizar o estilo do Vcaptcha no seu projeto, siga os passos abaixo:
+Para personalizar o estilo do VCaptcha no seu projeto, siga os passos abaixo:
 
 1. Crie um arquivo chamado `vcacptcha-styles.css` na pasta raiz do seu projeto.
 
@@ -463,7 +473,7 @@ Crie um arquivo chamado `vcacptcha.js"` na pasta raiz do seu projeto e insira o 
 })();
 ```
 
-Agora, seu sistema Vcaptcha está pronto para uso!
+Agora, seu sistema VCaptcha está pronto para uso!
 Certifique-se de seguir as instruções detalhadamente para garantir a integração correta.
 
 ## 📄 Licença
@@ -476,4 +486,4 @@ Gostou do código? Fique à vontade para utilizá-lo em seu sistema! No entanto,
 Se você deseja contribuir para o projeto, siga as orientações em [Contribuição](CONTRIBUTING.md).
  
 ## 🙏 Agradecimentos
-Obrigado por chegar até aqui! Agradeço pelo apoio e por considerar o uso do Vcaptcha! 😄
+Obrigado por chegar até aqui! Agradeço pelo apoio e por considerar o uso do VCaptcha! 😄
