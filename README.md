@@ -12,7 +12,6 @@ Veja um exemplo de como o **Vcaptcha** funciona:
 
 [![Visualizar Exemplo](https://img.shields.io/badge/Visualizar%20Exemplo-4CAF50.svg?style=for-the-badge)](https://example.com/vcaptcha-demo)
 
-
 ## 📑 Sumário 
 Para facilitar a navegação, abaixo está um sumário dos tópicos abordados neste `README`.
 
@@ -25,7 +24,7 @@ Para facilitar a navegação, abaixo está um sumário dos tópicos abordados ne
 - [Contribuição](#contribuição)
 - [Agradecimentos](#agradecimentos)
 
-<h2 id="#implementação">🛠️ Implementação </h2>
+## 🛠️ Implementação 
 
 ### 🟠 HTML 
 
