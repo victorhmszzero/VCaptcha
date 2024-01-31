@@ -15,8 +15,8 @@ Veja um exemplo de como o **Vcaptcha** funciona:
 ## 📑 Sumário 
 Para facilitar a navegação, abaixo está um sumário dos tópicos abordados neste `README`.
 
-- [Implementação](#implementação)
-    - [HTML](#html)
+- [implementação](https://github.com/victorhmszzero/VCaptcha/tree/main?tab=readme-ov-file#%EF%B8%8F-implementa%C3%A7%C3%A3o)
+    - [HTML](#-html)
     - [CSS](#css)
     - [JavaScript](#javascript)
 - [Licença](#licença)
