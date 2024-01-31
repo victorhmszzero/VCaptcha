@@ -4,7 +4,29 @@
 ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 ![SCSS](https://img.shields.io/badge/SCSS-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
 
-## Implementação
+*Bem-vindo ao Vcaptcha!* O **Vcaptcha** é um sistema de verificação de captcha simples, desenvolvido para facilitar a integração em seus formulários da web. Com uma implementação fácil em **HTML**, **CSS** e **JavaScript**.
+
+o **Vcaptcha** ajuda a proteger seus formulários contra bots indesejados enquanto oferece uma experiência amigável para os usuários. 
+
+Veja um exemplo de como o **Vcaptcha** funciona:
+
+[![Visualizar Exemplo](https://img.shields.io/badge/Visualizar%20Exemplo-4CAF50.svg?style=for-the-badge)](https://example.com/vcaptcha-demo)
+
+
+## 📑 Sumário 
+Para facilitar a navegação, abaixo está um sumário dos tópicos abordados neste `README`.
+
+- [Introdução](#implementação)
+- [Implementação](#implementação)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [JavaScript](#javascript)
+- [Licença](#licença)
+- [Código de Conduta](#código-de-conduta)
+- [Contribuição](#contribuição)
+- [Agradecimentos](#agradecimentos)
+
+## 🛠️ Implementação 
 
 ### 🟠 HTML 
 
@@ -13,8 +35,10 @@
     ```html
     <form id="contactForm">
     ```
+    
   > [!TIP]
-  > Se você já tiver um ID predefinido para seu formulário, siga as instruções abaixo.
+  > Dica: Se você já tiver um ID predefinido para seu formulário, siga as instruções abaixo:
+
 
   ```javascript
   // No arquivo vcacpcha.js, atualize a constante blockForm com o ID do seu formulário:
@@ -81,34 +105,41 @@
 
 ### 🔵 CSS
 
-Crie um arquivo chamado `vcacptcha-styles.css"` na pasta raiz do seu projeto e insira o código:
+Para personalizar o estilo do Vcaptcha no seu projeto, siga os passos abaixo:
+
+1. Crie um arquivo chamado `vcacptcha-styles.css` na pasta raiz do seu projeto.
+
+2. Insira o seguinte código CSS no arquivo recém-criado:
+  > [!TIP]
+  > Dica:  Você pode editar as variáveis no código abaixo para personalizar as cores de acordo com suas preferências.
 
 ``` css
 .v-captcha {
-  /* Main
-  ========================*/
+  /* Cores principais */
   --background-color: #fff;
   --label-border: #c9c9c9;
   --overlay-border: #dadada;
   /* Label icon/button
-  ========================*/
+
+  /* Cores do ícone/botão do rótulo */
   --icon-color: white;
   --square-color-hover: #f1f1f1;
   --square-border-hover: #505050;
   --circle-color: #3399ff;
   --circle-border: #f3f3f3;
   --check-background: black;
-  /* Input 
-  ========================*/
+
+  /* Cores da entrada */
   --input-color: #495057;
   --input-border: #ced4da;
   /* Restart button
-  ========================*/
+
+  /* Cores do botão de reinicialização */
   --restart-color: #495057;
   --restart-background: #e9ecef;
   --restart-background-hover: #dfe4e9;
-  /* Validate button
-  ========================*/
+
+  /* Cores do botão de validação */
   --btn-color: #fff;
   --btn-border: #1f1b18;
   --btn-background: #27221d;
@@ -303,28 +334,31 @@ Crie um arquivo chamado `vcacptcha.js"` na pasta raiz do seu projeto e insira o 
 
 ```javascript
 (function () {
-  // IDs Form
+  // Elementos do formulário
   const blockForm = document.getElementById("contactform");
-  //
-  // IDs before open captcha
+
+  // Elementos antes de abrir o captcha
   const VcaptchaLabel = document.getElementById("VcaptchaLabel");
   const VcaptchaIcon = document.getElementById("VcaptchaIcon");
   const VCaptchaNullFiled = document.getElementById("VcaptchaNullFiled");
-  // IDs after open captcha
+
+  // Elementos depois de abrir o captcha
   const VcaptchaOverlay = document.getElementById("VcaptchaOverlay");
   const VcaptchaContainer = document.getElementById("VcaptchaCaptcha");
   const VcaptchaInput = document.getElementById("VcaptchaInput");
   const VcaptchaSubmit = document.getElementById("VcaptchaSubmit");
   const VcaptchaRefresh = document.getElementById("VcaptchaRefresh");
 
-  // Classes
+  // Classes CSS
   const overlayOpenClass = "v-captcha__v-overlay--open";
   const iconSquareClass = "v-captcha__icon--square";
   const iconCircleClass = "v-captcha__icon--circle";
   const iconCheckClass = "v-captcha__icon--check";
 
+  // Variáveis
   let a = [];
   let c = false;
+
   // Exibir o overlay do captcha
   function showCaptchaOverlay() {
     if (!c) {
@@ -337,6 +371,7 @@ Crie um arquivo chamado `vcacptcha.js"` na pasta raiz do seu projeto e insira o 
       });
     }
   }
+  // Atualizar o ícone da caixa de seleção
   function checkboxIcon(value) {
     VcaptchaIcon.classList.remove(iconSquareClass);
     VcaptchaIcon.classList.remove(iconCircleClass);
@@ -429,3 +464,18 @@ Crie um arquivo chamado `vcacptcha.js"` na pasta raiz do seu projeto e insira o 
   resetForm();
 })();
 ```
+
+Agora, seu sistema Vcaptcha está pronto para uso!
+Certifique-se de seguir as instruções detalhadamente para garantir a integração correta.
+
+## 📄 Licença
+Este projeto é licenciado sob a [Licença MIT](LICENSE.md).
+
+## 🤝 Código de Conduta
+Gostou do código? Fique à vontade para utilizá-lo em seu sistema! No entanto, peço gentilmente que, ao fazer uso, siga o  [Código de Conduta](CODE_OF_CONDUCT.md).
+
+## 🎁 Contribuição
+Se você deseja contribuir para o projeto, siga as orientações em [Contribuição](CONTRIBUTING.md).
+ 
+## 🙏 Agradecimentos
+Obrigado por chegar até aqui! Agradeço pelo apoio e por considerar o uso do Vcaptcha! 😄
