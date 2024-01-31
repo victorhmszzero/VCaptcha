@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/vcacptcha.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -16,7 +16,8 @@
       <div class="main__container">
         <section class="main__subsection main__subsection--header">
           <div class="main__header">
-            <img class="main__logo" alt="logo" src="assets/VCaptcha/Logo.svg" />
+            <img id="logoLarge" class="main__logo" alt="Logo" src="assets/VCaptcha/Logo.svg" />
+            <img id="logoSmall" class="main__logo" alt="Logo" src="assets/VCaptcha/Icon-color.svg" />
             <p class="main__text">Preencha todas as informações e valide para conseguir enviar o formulário.</p>
           </div>
           <!-- SCSS: main -->
@@ -24,17 +25,33 @@
             <i class="annotation__icon material-icons">code</i>
             <p class="annotation__text">Implemente o código no seu projeto.</p>
             <div class="annotation__container">
-              <button class="annotation__btn annotation__btn--html" title="HTML" type="button">
+              <a
+                class="annotation__btn annotation__btn--html"
+                title="HTML"
+                target="_blank"
+                href="https://github.com/victorhmszzero/VCaptcha?tab=readme-ov-file#-html"
+              >
                 <i class="annotation__icon material-icons">html</i>
-              </button>
-              <button class="annotation__btn annotation__btn--css" title="CSS" type="button">
+              </a>
+              <a
+                class="annotation__btn annotation__btn--css"
+                title="CSS"
+                target="_blank"
+                href="https://github.com/victorhmszzero/VCaptcha?tab=readme-ov-file#-css"
+              >
                 <i class="annotation__icon material-icons">css</i>
-              </button>
-              <button class="annotation__btn annotation__btn--js" title="JavaScript" type="button">
+              </a>
+              <a
+                class="annotation__btn annotation__btn--js"
+                title="JavaScript"
+                target="_blank"
+                href="https://github.com/victorhmszzero/VCaptcha?tab=readme-ov-file#-js"
+              >
                 <i class="annotation__icon material-icons">javascript</i>
-              </button>
+              </a>
             </div>
           </div>
+          <span class="main__annotation-area"></span>
         </section>
         <section class="main__subsection main__subsection--form">
           <!-- SCSS: contact-form -->
@@ -105,7 +122,7 @@
 
     <!-- SCSS: footer -->
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container footer__container--item1">
         <img class="footer__icon footer__icon--logo" src="assets/vhmslogo-white.svg" alt="Autor logo" />
         <p class="footer__text">
           Este projeto foi criado por VHMS <br />
@@ -113,7 +130,7 @@
         </p>
       </div>
 
-      <div class="footer__container">
+      <div class="footer__container footer__container--item2">
         <a class="footer__btn" href="https://wa.me/5511977690193?text=Ol%C3%A1+Victor%21" target="_blank" title="WhatsApp Link">
           <img class="footer__icon" src="assets/wp-icon.svg" alt="Ícone do WhatsApp" />
         </a>
@@ -139,7 +156,7 @@
         </a>
       </div>
 
-      <div class="footer__container">
+      <div class="footer__container footer__container--item3">
         <p class="footer__text">Versão 1.0</p>
         <a class="footer__btn" href="https://github.com/victorhmszzero/VCaptcha" target="_blank" title="VCaptcha Link">
           <img class="footer__icon footer__icon--logo" src="assets/VCaptcha/icon-white.svg" alt="Logo" />

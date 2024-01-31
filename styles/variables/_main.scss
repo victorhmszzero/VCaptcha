@@ -1,7 +1,65 @@
 /* ========================
 Block: Main
 ========================= */
+@media (min-width: 933px) {
+  .main__container {
+    max-width: 1140px;
+    width: 80%;
+    margin: 0px auto;
 
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #logoLarge {
+    display: block;
+  }
+  #logoSmall {
+    display: none;
+  }
+}
+@media (max-width: 933px) {
+  #logoLarge {
+    display: block;
+  }
+  #logoSmall {
+    display: none;
+  }
+}
+
+@media (min-width: 754px) {
+  .main__text {
+    font-size: 1.25rem;
+  }
+  .main__annotation {
+    right: 10px;
+  }
+}
+@media (max-width: 754px) {
+  .main__container {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .main__text {
+    font-size: 1rem;
+  }
+
+  .main__logo {
+    width: 250px;
+  }
+  .main__annotation {
+    transform: scale(0.9);
+    right: -5px;
+  }
+  #logoLarge {
+    display: block;
+    width: 100%;
+    margin: 0px 0px 10px;
+  }
+}
+#logoSmall {
+  width: 111px;
+}
 .main {
   display: flex;
   position: relative;
@@ -9,15 +67,12 @@ Block: Main
   height: 100%;
 
   &__container {
-    margin: 0px auto;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-    max-width: 1140px;
+    transition: 500ms;
   }
-
+  &__header {
+    width: 100%;
+    margin: 0px 20px;
+  }
   &__subsection {
     position: relative;
     margin-bottom: 20px;
@@ -26,8 +81,8 @@ Block: Main
 
   &__subsection--header {
     display: flex;
-    flex-direction: column;
     justify-content: end;
+    align-items: end;
   }
 
   &__subsection--form {
@@ -46,7 +101,6 @@ Block: Main
   }
 
   &__text {
-    font-size: 1.25rem;
     font-weight: 300;
   }
   &__text--bold {
@@ -59,11 +113,14 @@ Element: Annotation
 ========================= */
 
 .main {
+  &__annotation-area {
+    display: block;
+    padding: 10px 170px;
+  }
   &__annotation {
     display: flex;
     position: absolute;
     top: 0px;
-    right: 10px;
     z-index: 1;
     flex-direction: column;
     justify-content: center;

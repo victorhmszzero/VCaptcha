@@ -1,10 +1,48 @@
 /* ========================
 Block: Footer
 ========================= */
+@media (min-width: 975px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .footer__container--item1 {
+    order: 1;
+  }
+
+  .footer__container--item2 {
+    order: 2;
+  }
+
+  .footer__container--item3 {
+    order: 3;
+  }
+}
+
+@media (max-width: 975px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .footer__container--item1 {
+    order: 1;
+  }
+
+  .footer__container--item2 {
+    padding: 0px 50px;
+    order: 3;
+  }
+
+  .footer__container--item3 {
+    order: 2;
+  }
+}
 
 .footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 80px;
@@ -62,10 +100,12 @@ Block: Footer
     padding: 10px;
     border: 1px solid white;
     text-decoration: none;
+    transition: transform 0.3s ease-in-out;
   }
 
   &__license:hover {
     background-color: #1d1915;
+    transform: scale(1.1);
   }
 }
 
